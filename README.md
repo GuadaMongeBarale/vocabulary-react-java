@@ -1,6 +1,5 @@
 # English vocabulary
 
-![vocabulary](/images/project.png)
 
 ## Click to the [page](https://guadamongebarale.github.io/vocabulary-react-java/)
 

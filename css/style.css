@@ -1,0 +1,186 @@
+/* GLOBALES */
+:root {
+    --primary-color:rgb(12, 194, 240);
+    --background-color: #232830;
+    --secondary-color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--background-color);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* HEADER */ 
+
+header {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+header a {
+    justify-self: right;
+    color: var(--secondary-color)
+}
+
+/* Main vista principal */
+
+main {
+    width: 100%;
+    height: auto;
+}
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color:var(--primary-color);
+
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,280px);
+    gap:35px;
+    place-content: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.container button {
+    width: 280px;
+    height: 280px;
+
+    cursor: pointer;
+    border-radius: 20px;
+    border:none;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.container .frutis {
+    background-image: url('https://cdn.pixabay.com/photo/2017/05/07/19/32/strawberry-2293337_960_720.jpg');
+}
+
+.container .vegetables {
+    background-image: url('https://cdn.pixabay.com/photo/2017/11/12/19/22/water-2943518_960_720.jpg');
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    place-content: center;
+    width: 100%;
+    height: 10vh;
+    color: var(--secondary-color);
+}
+
+footer h2 {
+    align-self: center;
+    font-size: 1.8rem;
+}
+footer a {
+    color: var(--secondary-color);
+}
+
+
+/* primer vista */
+
+.word {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 85vh;
+
+    margin-bottom: 30px;
+}
+
+.word img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.word .voice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 280px;
+    height: 50px;
+    padding: 20px;
+}
+
+.voice p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.voice img {
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+}
+
+.voice input {
+    width: 260px;
+    height: 40px;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    font-size: 1.6rem;
+
+    padding-left: 15px;
+}
+
+.word button {
+    width: 280px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+
+    cursor: pointer;
+
+}
+
+/* cuando valida el resultado */
+
+.result {
+    color: red;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.pResult {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-align: center;
+}
